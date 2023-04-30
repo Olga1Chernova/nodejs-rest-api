@@ -14,6 +14,10 @@ router.post("/register", validateBody(schemas.registerSchema), controller.regist
 
 router.post("/login", validateBody(schemas.loginSchema), controller.login);
 
+router.post("/resend", validateBody(schemas.emailSchema), controller.resend)
+
+router.get("/verify/:verificationToken", controller.verify)
+
 router.get("/current", authenticate, controller.getCurrent);
 
 router.post("/logout", authenticate, controller.logOut);
