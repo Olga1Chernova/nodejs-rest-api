@@ -1,31 +1,31 @@
-## GoIT Node.js Course Template Homework
+## Phonebook Backend Project
 
-Виконайте форк цього репозиторію для виконання домашніх завдань (2-6)
-Форк створить репозиторій на вашому http://github.com
+This is the backend project for a phonebook application that allows users to register, login, add an avatar, and perform CRUD operations on contacts.
 
-Додайте ментора до колаборації
+### Features:
 
-Для кожної домашньої роботи створюйте свою гілку.
+- User Registration: Users can create a new account by providing their desired username, email, and password. The registration endpoint is secure and validates user input.
+- User Login: Registered users can log in using their credentials to access their phonebook and perform CRUD operations.
+- Avatar Upload: Users have the ability to upload and update their profile picture (avatar) to personalize their phonebook experience.
+- Blocked Users: User can move contact to blocked contacts list
+- Contact Creation: Once logged in, users can create new contacts by providing the contact's name, phone number.
+- Contact Retrieval: Users can view a list of their existing contacts, including their name, phone number.
+- Contact Update: Users can edit and update the details of their existing contacts, including the name and phone number.
+- Contact Deletion: Users have the ability to delete unwanted contacts from their phonebook.
 
-- hw02
-- hw03
-- hw04
-- hw05
-- hw06
+###Technologies Used:
 
-Кожна нова гілка для др повинна робитися з master
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JSON Web Tokens (JWT)
+- Multer (for file uploads)
+- bcrypt (for password hashing)
 
-Після того, як ви закінчили виконувати домашнє завдання у своїй гілці, необхідно зробити пулл-реквест (PR). Потім додати ментора для рев'ю коду. Тільки після того, як ментор заапрувить PR, ви можете виконати мердж гілки з домашнім завданням у майстер.
+###Commands
 
-Уважно читайте коментарі ментора. Виправте зауваження та зробіть коміт у гілці з домашнім завданням. Зміни підтягнуться у PR автоматично після того, як ви відправите коміт з виправленнями на github
-Після виправлення знову додайте ментора на рев'ю коду.
-
-- При здачі домашньої роботи є посилання на PR
-- JS-код чистий та зрозумілий, для форматування використовується Prettier
-
-### Команди:
-
-- `npm start` &mdash; старт сервера в режимі production
-- `npm run start:dev` &mdash; старт сервера в режимі розробки (development)
-- `npm run lint` &mdash; запустити виконання перевірки коду з eslint, необхідно виконувати перед кожним PR та виправляти всі помилки лінтера
-- `npm lint:fix` &mdash; та ж перевірка лінтера, але з автоматичними виправленнями простих помилок
+- `npm start` &mdash; starts the server in production mode.
+- `npm run start:dev` &mdash;  starts the server in development mode.
+- `npm run lint` &mdash; runs code checks with eslint. It is necessary to run this command before each pull request (PR) and fix all linting errors.
+- `npm lint:fix` &mdash; similar to the lint command, but automatically fixes simple linting errors.
