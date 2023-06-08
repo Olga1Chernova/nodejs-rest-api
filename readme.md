@@ -2,7 +2,7 @@
 
 This is the backend project for a phonebook application that allows users to register, login, add an avatar, and perform CRUD operations on contacts.
 
-### Features:
+## Features:
 
 - User Registration: Users can create a new account by providing their desired username, email, and password. The registration endpoint is secure and validates user input.
 - User Login: Registered users can log in using their credentials to access their phonebook and perform CRUD operations.
@@ -13,7 +13,7 @@ This is the backend project for a phonebook application that allows users to reg
 - Contact Update: Users can edit and update the details of their existing contacts, including the name and phone number.
 - Contact Deletion: Users have the ability to delete unwanted contacts from their phonebook.
 
-###Technologies Used:
+## Technologies Used:
 
 - Node.js
 - Express.js
@@ -23,7 +23,7 @@ This is the backend project for a phonebook application that allows users to reg
 - Multer (for file uploads)
 - bcrypt (for password hashing)
 
-###Commands
+## Commands:
 
 - `npm start` &mdash; starts the server in production mode.
 - `npm run start:dev` &mdash;  starts the server in development mode.
